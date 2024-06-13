@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-500;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .btn-header {
+    @apply bg-yellow-400 px-3 py-3 hover:bg-yellow-300;
+  }
+
+  .flex-center {
+    @apply flex justify-between items-center;
+  }
+
+  .select_address {
+    @apply border-solid border-4 gap-[10px] border-yellow-500 py-2 rounded-lg flex justify-center items-center;
+    /* flex items-center justify-center */
+  }
+
+  .viewed_tour {
+    @apply aspect-[1/1] object-cover w-[120px];
+  }
+
+  .show {
+    @apply absolute top-full left-0 w-[100%] text-center bg-003C71;
+  }
+  .hide {
+    @apply hidden;
+  }
+
+  .box-calendar {
+    @apply border-solid border border-gray-300 rounded-lg p-3;
+  }
+
+  .btn-inc_dec {
+    @apply border border-solid px-1 border-gray-400 font-bold;
+  }
+
+  .bg-active {
+    @apply bg-blue-200;
+  }
+  .input-config {
+    @apply p-2 border-2 border-solid rounded-md border-[#ccc] outline-none focus:shadow-custom;
+  }
+}
