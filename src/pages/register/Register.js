@@ -128,7 +128,7 @@ export const Register = () => {
     <div className="relative  flex justify-center items-center h-[100vh] bg-bgLogin bg-cover bg-no-repeat bg-center">
       <div className="absolute inset-0 bg-slate-200 opacity-50"></div>
       <div className=" bg-white px-10 py-5 z-40 rounded-lg max-w-[600px]">
-        <h2 className="text-3xl text-003C71 font-bold text-center mb-10">
+        <h2 className="text-3xl text-purple font-bold text-center mb-10">
           Tạo tài khoản
         </h2>
         <div className="flex place-items-end flex-wrap gap-x-5 gap-y-7">
@@ -156,7 +156,7 @@ export const Register = () => {
             Chính sách bảo mật
           </p>
           <button
-            className="w-full p-3 text-white uppercase bg-003C71 rounded-md"
+            className="w-full p-3 text-white uppercase bg-purple rounded-md"
             onClick={handleRegister}
           >
             Tạo tài khoản
@@ -164,7 +164,7 @@ export const Register = () => {
           <div className="flex mx-auto">
             <p>Bạn đã có tài khoản?&nbsp;</p>
             <Link to="/login">
-              <p className="text-003C71 font-bold">Đăng nhập</p>
+              <p className="text-purple font-bold">Đăng nhập</p>
             </Link>
           </div>
         </div>

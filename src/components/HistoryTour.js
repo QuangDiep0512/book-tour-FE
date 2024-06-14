@@ -59,13 +59,13 @@ export const HistoryTour = () => {
             <div className="flex items-center gap-[10px]" key={index}>
               <FontAwesomeIcon
                 icon={item.icon}
-                className="md:text-3xl text-2xl text-003C71"
+                className="md:text-3xl text-2xl text-purple"
               />
               <div className="flex flex-col">
                 <h3 className="md:text-xl text-lg text-[#2a3a41]">
                   {item.title}
                 </h3>
-                <p className="text-003C71 sm:text-sm">{item.detail}</p>
+                <p className="text-purple sm:text-sm">{item.detail}</p>
               </div>
             </div>
           );
@@ -73,7 +73,7 @@ export const HistoryTour = () => {
         {/* Tours du lịch bạn đã xem gần đây */}
       </div>
       <div className="py-[30px]">
-        <h2 className="text-[32px] text-003C71">
+        <h2 className="text-[32px] text-purple">
           Tours du lịch bạn đã xem gần đây
         </h2>
         <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
@@ -87,7 +87,7 @@ export const HistoryTour = () => {
                   <Link to={`/tourList/${item.id}`} className="flex">
                     <img src={item.image} alt="" className="viewed_tour" />
                     <div className="flex flex-col text-sm py-2 pl-2">
-                      <p className=" text-003C71 font-bold lg:min-h-[60px] min-h-[80px]">
+                      <p className=" text-purple font-bold lg:min-h-[60px] min-h-[80px]">
                         {item.name}
                       </p>
                       <div className="mt-3">

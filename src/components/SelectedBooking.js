@@ -18,7 +18,7 @@ export const SelectedBooking = () => {
   const selectedTour = useSelector((state) => state.cartReducer.selectedTour);
   return (
     <div className="col-span-1 w-full">
-      <div className="hover:text-003C71 transition-all bg-orange text-lg text-center text-white p-5 rounded-lg cursor-pointer">
+      <div className="hover:text-purple transition-all bg-orange text-lg text-center text-white p-5 rounded-lg cursor-pointer">
         <span className="font-normal">Hỗ trợ giao dịch: </span>
         <span className="font-extrabold">1900 1008</span>
       </div>

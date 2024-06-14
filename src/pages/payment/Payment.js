@@ -156,7 +156,7 @@ export const Payment = () => {
               </p>
             </div>
             <button
-              className={`p-2 uppercase rounded-md mt-5 w-full bg-003C71 text-white text-lg disabled:opacity-75
+              className={`p-2 uppercase rounded-md mt-5 w-full bg-purple text-white text-lg disabled:opacity-75
               ${isContent ? "" : "pointer-events-none opacity-[0.8]"}`}
               onClick={handleClickPayment}
             >

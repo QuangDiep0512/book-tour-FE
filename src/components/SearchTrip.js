@@ -116,7 +116,7 @@ export const SearchTrip = (props) => {
       </div>
       {/* ==Tìm kiếm== */}
       <div
-        className="select_address bg-003C71 px-[80px]"
+        className="select_address bg-purple px-[80px]"
         onClick={handleSearch}
       >
         <FontAwesomeIcon icon={faSearch} className="text-yellow-400 text-2xl" />

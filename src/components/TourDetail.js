@@ -14,7 +14,7 @@ export const TourDetail = (props) => {
       {tourDetail.map((item) => {
         return (
           <div className="max-w-[1100px] mx-auto " key={item.id}>
-            <h2 className="text-3xl text-003C71 font-bold">{item.name}</h2>
+            <h2 className="text-3xl text-purple font-bold">{item.name}</h2>
             <div className="my-4">
               <span className="bg-lightYellow p-2 rounded-md text-white text-lg">
                 8.0
@@ -44,7 +44,7 @@ export const TourDetail = (props) => {
                     </div>
                     <div className="flex-center ">
                       <p>Phương tiện:&nbsp;</p>
-                      <p className="text-base lg:text-lg  text-003C71">
+                      <p className="text-base lg:text-lg  text-purple">
                         {item.vehicle
                           .map((list) => list.nameVehicle)
                           .join(" - ")}
@@ -52,7 +52,7 @@ export const TourDetail = (props) => {
                     </div>
                     <div>
                       Mã Tour:
-                      <span className="text-003C71 text-base lg:text-lg">
+                      <span className="text-purple text-base lg:text-lg">
                         &nbsp;2
                       </span>
                     </div>
@@ -63,13 +63,13 @@ export const TourDetail = (props) => {
                 </div>
                 {/* text-1 */}
                 <div className="bg-white my-2 p-4">
-                  <h2 className="text-3xl font-bold text-003C71 my-2">
+                  <h2 className="text-3xl font-bold text-purple my-2">
                     {item.description.title}
                   </h2>
                   <p>{item.description.content}</p>
                 </div>
                 <div className="bg-white my-2 p-4">
-                  <h2 className="text-3xl font-bold text-003C71 my-2">
+                  <h2 className="text-3xl font-bold text-purple my-2">
                     {item.name}
                   </h2>
                   {item.tour_details.map((list, index) => {
@@ -104,7 +104,7 @@ export const TourDetail = (props) => {
                 </div>
                 {/* Thông tin Visa */}
                 <div className="bg-white my-2 p-4">
-                  <h1 className="text-3xl font-bold text-003C71 my-2">
+                  <h1 className="text-3xl font-bold text-purple my-2">
                     Thông tin Visa
                   </h1>
                   <ul className="flex flex-col gap-3">
@@ -117,7 +117,7 @@ export const TourDetail = (props) => {
                 </div>
                 {/* Hướng dẫn viên */}
                 <div className="bg-white my-2 p-4">
-                  <h2 className="text-3xl font-bold text-003C71 my-2">
+                  <h2 className="text-3xl font-bold text-purple my-2">
                     Hướng dẫn viên
                   </h2>
                   <p>
@@ -128,7 +128,7 @@ export const TourDetail = (props) => {
                 </div>
                 {/* Đánh giá khách hàng  */}
                 <div className="bg-white my-2 p-4">
-                  <h3 className="text-base font-bold text-003C71 my-2">
+                  <h3 className="text-base font-bold text-purple my-2">
                     Đánh giá khách hàng về {item.name}
                   </h3>
                   <div>Tour chưa có bình luận</div>

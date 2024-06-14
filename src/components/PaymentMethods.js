@@ -246,7 +246,7 @@ export const PaymentMethods = (props) => {
           )}
 
           <button
-            className="bg-003C71 p-3 text-white uppercase w-full rounded-lg"
+            className="bg-purple p-3 text-white uppercase w-full rounded-lg"
             onClick={handlePaymentConfirm}
           >
             Xác nhận

@@ -59,7 +59,7 @@ export const Booked = () => {
               <div key={index} className="mb-7 py-4 border-b-2">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-bold text-003C71">{item.name}</h3>
+                    <h3 className="font-bold text-purple">{item.name}</h3>
                     <div className="flex">
                       <img
                         src={item.image}
@@ -70,28 +70,28 @@ export const Booked = () => {
                         <div className="flex items-center gap-2">
                           <FontAwesomeIcon
                             icon={faBarcode}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>Mã tour:{item.idTour}</p>
                         </div>
                         <div className="flex items-center gap-2">
                           <FontAwesomeIcon
                             icon={faClock}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>Thời gian: {item.quantity_date}</p>
                         </div>
                         <div className="flex items-center gap-2">
                           <FontAwesomeIcon
                             icon={faCalendarDay}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>Ngày khởi hành: {item.start_date}</p>
                         </div>
                         <div className="flex items-center gap-2">
                           <FontAwesomeIcon
                             icon={faCar}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           Phương tiện:
                           {item.vehicle.map((list, index) => (
@@ -104,42 +104,42 @@ export const Booked = () => {
                         <div className="flex items-center gap-2">
                           <FontAwesomeIcon
                             icon={faStar}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>Chất lượng: {item.star}</p>
                         </div>
                         <div className="flex items-center gap-2">
                           <FontAwesomeIcon
                             icon={faUserTie}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>Số người lớn: {item.quantityAdult}</p>
                         </div>
                         <div className="flex items-center gap-2">
                           <FontAwesomeIcon
                             icon={faChild}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>Số trẻ em: {item.quantityChildren}</p>
                         </div>
                         <div className="flex items-baseline gap-2">
                           <FontAwesomeIcon
                             icon={faCreditCard}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>Hình hức thanh toán: {item.title}</p>
                         </div>
                         <div className="flex items-baseline gap-2">
                           <FontAwesomeIcon
                             icon={faCalendar}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>Ngày xác nhận thanh toán: {getCurrentDate()}</p>
                         </div>
                         <div className="flex items-center gap-2">
                           <FontAwesomeIcon
                             icon={faDollarSign}
-                            className="text-003C71 w-5"
+                            className="text-purple w-5"
                           />
                           <p>
                             <span>Tổng tiền: </span>
@@ -169,7 +169,7 @@ export const Booked = () => {
             );
           })
         ) : (
-          <div className="mb-7 py-4 border-b-2 min-h-[200px] flex items-center justify-center text-3xl text-003C71 italic">
+          <div className="mb-7 py-4 border-b-2 min-h-[200px] flex items-center justify-center text-3xl text-purple italic">
             Chưa có Tour nào được đặt
           </div>
         )}

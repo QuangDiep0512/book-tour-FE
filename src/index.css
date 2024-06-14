@@ -28,7 +28,7 @@
   }
 
   .show {
-    @apply absolute top-full left-0 w-[100%] text-center bg-003C71;
+    @apply absolute top-full left-0 w-[100%] text-center bg-purple;
   }
   .hide {
     @apply hidden;

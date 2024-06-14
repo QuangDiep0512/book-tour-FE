@@ -35,7 +35,7 @@ export const DepartureInfor = (props) => {
   return (
     <div className="col-span-1  h-[100vh] sticky top-0">
       <div className="mb-3 bg-white  p-5">
-        <h2 className="font-bold text-2xl text-003C71">Lịch khởi hành & giá</h2>
+        <h2 className="font-bold text-2xl text-purple">Lịch khởi hành & giá</h2>
         <p className="my-2">Chọn ngày khởi hành:</p>
         <div className="my-2">
           <div className="box-calendar">{item.start_date}</div>
@@ -83,16 +83,16 @@ export const DepartureInfor = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center text-003C71">
+        <div className="flex items-center text-purple">
           <FontAwesomeIcon icon={faCircleInfo} />
           <p className="ml-2 leading-10">Liên hệ để xác nhận chỗ</p>
         </div>
-        <div className="flex items-center text-003C71">
+        <div className="flex items-center text-purple">
           <FontAwesomeIcon icon={faCircleInfo} />
           <p className="ml-2 leading-10">Trẻ em từ 2 đến 7 tuổi</p>
         </div>
         <div className="flex-center my-5">
-          <p className="font-bold text-003C71">Tổng cộng</p>
+          <p className="font-bold text-purple">Tổng cộng</p>
           <div className="flex-center">
             <span className="text-lightYellow font-bold text-2xl">
               {formatMoney(totalPrice(item.price_adult, item.price_child))}

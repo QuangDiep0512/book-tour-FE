@@ -158,7 +158,7 @@ export const Booking = () => {
               </div>
             ))}
             <button
-              className="bg-003C71 p-3 w-full text-white font-bold rounded-lg"
+              className="bg-purple p-3 w-full text-white font-bold rounded-lg"
               onClick={handleSubmitFormTour}
             >
               Tiếp tục

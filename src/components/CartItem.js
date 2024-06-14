@@ -23,7 +23,7 @@ export const CartItem = (props) => {
   const { item, isActive, handleDeleteItemCart, handleClickChooseTour } = props;
   return (
     <div>
-      <h3 className="font-bold text-003C71">{item.name}</h3>
+      <h3 className="font-bold text-purple">{item.name}</h3>
       <div
         className={
           isActive
@@ -40,19 +40,19 @@ export const CartItem = (props) => {
         </Link>
         <div className="px-3 leading-8 col-span-2 md:text-base text-sm">
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faBarcode} className="text-003C71" />
+            <FontAwesomeIcon icon={faBarcode} className="text-purple" />
             <p>Mã tour:{item.id}</p>
           </div>
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faClock} className="text-003C71" />
+            <FontAwesomeIcon icon={faClock} className="text-purple" />
             <p>Thời gian: {item.quantity_date}</p>
           </div>
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faCalendarDay} className="text-003C71" />
+            <FontAwesomeIcon icon={faCalendarDay} className="text-purple" />
             <p>Ngày khởi hành: {item.start_date}</p>
           </div>
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faCar} className="text-003C71" />
+            <FontAwesomeIcon icon={faCar} className="text-purple" />
             Phương tiện:
             {item.vehicle.map((list, index) => (
               <React.Fragment key={list.id}>
@@ -62,23 +62,23 @@ export const CartItem = (props) => {
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faStar} className="text-003C71" />
+            <FontAwesomeIcon icon={faStar} className="text-purple" />
             <p>Chất lượng: {item.star}</p>
           </div>
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faUsers} className="text-003C71" />
+            <FontAwesomeIcon icon={faUsers} className="text-purple" />
             <p>Số hành khách tối đa: {item.quantity}</p>
           </div>
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faUserTie} className="text-003C71" />
+            <FontAwesomeIcon icon={faUserTie} className="text-purple" />
             <p>Số người lớn: {item.quantityAdult}</p>
           </div>
           <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faChild} className="text-003C71" />
+            <FontAwesomeIcon icon={faChild} className="text-purple" />
             <p>Số trẻ em: {item.quantityChildren}</p>
           </div>
           <div className="lg:hidden flex items-center gap-2">
-            <FontAwesomeIcon icon={faDollarSign} className="text-003C71" />
+            <FontAwesomeIcon icon={faDollarSign} className="text-purple" />
             <p>
               {formatMoney(item.price_adult)}
               đ/1

@@ -11,7 +11,7 @@ export const ListTourArea = (props) => {
   } = props;
   return (
     <div className="col-span-3">
-      <h2 className="lg:text-4xl md:text-3xl text-[24px]  font-bold text-003C71">
+      <h2 className="lg:text-4xl md:text-3xl text-[24px]  font-bold text-purple">
         Tour Du Lịch giá tốt nhất trong năm nay
       </h2>
       <ul className="grid grid-cols-4 text-center text-sm md:text-base my-4 border border-solid border-[#c0bebe]">

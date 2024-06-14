@@ -36,7 +36,7 @@ export const CheckoutSuccess = () => {
           <p>Quý khách vui lòng kiểm tra email để biết thêm thông tin</p>
           <p>
             Quý khách có bất kì thắc mắc hoặc vấn để gì hãy liên hệ:{" "}
-            <span className="text-003C71 font-bold">1900 1808</span> để được tư
+            <span className="text-purple font-bold">1900 1808</span> để được tư
             vấn
           </p>
           <p>Rất vui khi được phục vụ quý khách</p>
@@ -45,7 +45,7 @@ export const CheckoutSuccess = () => {
       </div>
       <div className="flex justify-between gap-[150px]">
         <Link to={"/"}>
-          <button className="p-3 bg-003C71 text-white rounded-md">
+          <button className="p-3 bg-purple text-white rounded-md">
             Trở về trang chủ
           </button>
         </Link>
@@ -55,7 +55,7 @@ export const CheckoutSuccess = () => {
           </button>
         </Link>
         <Link to={"/booked"}>
-          <button className="p-3 bg-003C71 text-white rounded-md">
+          <button className="p-3 bg-purple text-white rounded-md">
             Tour đã đặt
           </button>
         </Link>

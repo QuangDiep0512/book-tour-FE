@@ -30,7 +30,7 @@ export const MenuLocation = (props) => {
     <div className="mb-5">
       <div className="bg-white border border-[#c0bebe] border-solid">
         <div
-          className="bg-[#cfcfcf] p-2 cursor-pointer text-003C71 text-lg font-semibold flex-center  "
+          className="bg-[#cfcfcf] p-2 cursor-pointer text-purple text-lg font-semibold flex-center  "
           onClick={handleClickMenuLocationLeft}
         >
           <h3 className="">Địa điểm hot trong nước</h3>
@@ -61,7 +61,7 @@ export const MenuLocation = (props) => {
       {/* ==Categories left-bottom == */}
       <div className="bg-white border border-[#c0bebe] border-solid">
         <div
-          className="bg-[#cfcfcf] p-2 text-003C71 text-lg font-semibold flex-center cursor-pointer"
+          className="bg-[#cfcfcf] p-2 text-purple text-lg font-semibold flex-center cursor-pointer"
           onClick={handleClickMenuLocationRight}
         >
           <h3 className="">Địa điểm hot ngoài nước</h3>

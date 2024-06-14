@@ -49,7 +49,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <div className="flex-center bg-003C71 text-white px-[20px] lg:px-[100px] py-[10px] sticky top-0 z-20">
+    <div className="flex-center bg-purple text-white px-[20px] lg:px-[100px] py-[10px] sticky top-0 z-20">
       {/* ==Header=left==  */}
       <div className="flex-center gap-[30px]">
         <NavLink to="/">

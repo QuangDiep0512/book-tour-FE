@@ -149,7 +149,7 @@ export const Cart = () => {
       <div className="py-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
         {/* Cart left */}
         <div className="col-span-2">
-          <h2 className="font-md text-3xl text-003C71">Giỏ hàng</h2>
+          <h2 className="font-md text-3xl text-purple">Giỏ hàng</h2>
 
           <div className="shadow-lg  shadow-slate-400 mt-3 p-4 max-h-[350px] overflow-y-scroll">
             {dataCart.length > 0 ? (
@@ -173,8 +173,8 @@ export const Cart = () => {
         </div>
         {/* Cart right */}
         <div className="">
-          <h2 className="font-md text-3xl text-003C71">Chi tiết</h2>
-          <div className="bg-003C71 p-5 mt-3 text-white leading-7 ">
+          <h2 className="font-md text-3xl text-purple">Chi tiết</h2>
+          <div className="bg-purple p-5 mt-3 text-white leading-7 ">
             <input
               ref={quantityAdultRef}
               onClick={check ? null : showSwal}
