@@ -10,7 +10,7 @@ module.exports = {
         orange: "#F97316",
       },
       boxShadow: {
-        custom: "rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;",
+        custom: "rgba(3, 102, 214, 0.3) 0px 0px 0px 3px",
       },
       backgroundImage: {
         bgLogin: "url('./imgs/bgLogin-beach.jpeg')",
