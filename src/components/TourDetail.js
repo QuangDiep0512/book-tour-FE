@@ -2,12 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
-import { useDispatch, useSelector } from "react-redux";
 import { DepartureInfor } from "./DepartureInfor";
+import { Comment } from "./Comment";
 
 export const TourDetail = (props) => {
   const { tourDetail } = props;
-  // const dataCart = useSelector((state) => state.cartReducer);
 
   return (
     <div className="bg-grey py-5">
@@ -131,7 +130,7 @@ export const TourDetail = (props) => {
                   <h3 className="text-base font-bold text-purple my-2">
                     Đánh giá khách hàng về {item.name}
                   </h3>
-                  <div>Tour chưa có bình luận</div>
+                  <Comment idTour={item.id} />
                 </div>
               </div>
               {/* grid-right */}

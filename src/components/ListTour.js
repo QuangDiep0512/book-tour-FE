@@ -5,7 +5,7 @@ export const ListTour = (props) => {
   const { data, title, des } = props;
   return (
     <>
-      <div className="my-[60px] px-[100px]">
+      <div className="my-[60px] md:px-[100px] px-[40px]">
         <h2 className="font-bold text-2xl lg:text-4xl text-[#212529] my-4">
           {title}
         </h2>

@@ -49,13 +49,16 @@ export const SearchTrip = (props) => {
 
   useEffect(() => {
     setMeuLocation(data);
-  }, []);
+  }, [data]);
 
   return (
-    <div className="grid lg:grid-cols-4 grid-cols-2 gap-[30px] justify-center bg-white lg:p-8 p-4 w-[1024px] rounded-lg mx-4">
+    <div className="grid lg:grid-cols-4 text-sm md:text-base w-[500px] md:w-auto grid-cols-2 gap-[30px] justify-center bg-white lg:p-8 p-4 rounded-lg mx-4">
       {/* ==Điểm khởi hành== */}
       <div className="select_address px-4">
-        <FontAwesomeIcon icon={faPlaneDeparture} className="text-[#495057]" />
+        <FontAwesomeIcon
+          icon={faPlaneDeparture}
+          className="text-[#495057] hidden md:block"
+        />
         <div className=" ">
           <h3 className="text-[#92ACC2]">Điểm khởi hành</h3>
           <select
@@ -78,7 +81,10 @@ export const SearchTrip = (props) => {
       </div>
       {/* ==Điểm đến== */}
       <div className="select_address">
-        <FontAwesomeIcon icon={faLocationDot} className="text-[#495057]" />
+        <FontAwesomeIcon
+          icon={faLocationDot}
+          className="text-[#495057] hidden md:block"
+        />
         <div className="">
           <h3 className="text-[#92ACC2]">Điểm đến</h3>
           <select
@@ -101,12 +107,15 @@ export const SearchTrip = (props) => {
       </div>
       {/* ==Ngày đi== */}
       <div className="select_address">
-        <FontAwesomeIcon icon={faLocationDot} className="text-[#495057]" />
+        <FontAwesomeIcon
+          icon={faLocationDot}
+          className="text-[#495057] hidden md:block"
+        />
         <div>
           <h3 className="text-[#92ACC2]">Ngày đi</h3>
           <input
             type="date"
-            className="outline-none"
+            className="outline-none w-[110px] md:w-auto"
             name="txtDate"
             id="txtDate"
             min="2000-01-01"
@@ -116,7 +125,7 @@ export const SearchTrip = (props) => {
       </div>
       {/* ==Tìm kiếm== */}
       <div
-        className="select_address bg-purple px-[80px]"
+        className="select_address bg-purple md:px-[80px]"
         onClick={handleSearch}
       >
         <FontAwesomeIcon icon={faSearch} className="text-yellow-400 text-2xl" />

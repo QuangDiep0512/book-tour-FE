@@ -52,7 +52,7 @@ export const HistoryTour = () => {
     }
   }, [userLogin]);
   return (
-    <div className="bg-grey px-[100px] pt-[40px]">
+    <div className="bg-grey px-14 md:px-[100px] pt-[40px]">
       <div className=" flex md:flex-row flex-col md:gap-[80px] gap-5 md:justify-between">
         {service.map((item, index) => {
           return (
@@ -73,7 +73,7 @@ export const HistoryTour = () => {
         {/* Tours du lịch bạn đã xem gần đây */}
       </div>
       <div className="py-[30px]">
-        <h2 className="text-[32px] text-purple">
+        <h2 className="text-2xl md:text-[32px] text-purple">
           Tours du lịch bạn đã xem gần đây
         </h2>
         <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">

@@ -101,7 +101,6 @@ export const Category = () => {
     <div className="bg-grey">
       <div className="max-w-[1024px] mx-auto">
         <div className="flex justify-center items-center relative w-full">
-          {/* <SearchTrip location={location} setLocation={setLocation} /> */}
           <SearchTrip />
         </div>
         <div className=" md:grid md:grid-cols-4 my-4 gap-8 mx-4">

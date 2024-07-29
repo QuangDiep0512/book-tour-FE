@@ -33,14 +33,14 @@ export const ListTourItem = (props) => {
         <h3
           className={`${
             window.location.pathname === "/"
-              ? "font-bold text-lg mb-3 text-[#494e53] min-h-[80px]"
+              ? "font-bold md:text-lg text-base mb-3 text-[#494e53] min-h-[80px]"
               : "font-bold text-[15px] mb-3 text-[#494e53] h-16 line-clamp-3"
           }`}
         >
           {item.name}
         </h3>
         <div
-          className={`min-h-[150px] ${
+          className={`md:min-h-[150px] min-h-[120px] text-sm md:text-base ${
             window.location.pathname === "/" ? "text-base" : "text-[15px]"
           }`}
         >
