@@ -7,9 +7,11 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useDispatch, useSelector } from "react-redux";
 import { addCheckout } from "../../actions/Checkout";
+import { Process } from "../../components/Process";
 
 export const Payment = () => {
   const [payment, setPayment] = useState([]);
+  const [step, setStep] = useState(4);
   const [isContent, setIsContent] = useState(null);
   const [isChecked, setIsChecked] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState("");
@@ -57,7 +59,7 @@ export const Payment = () => {
   }, []);
   return (
     <div className="bg-grey">
-      <div>Cac buoc thanh toan</div>
+      <Process step={step} />
       <div className="my-7 py-5 bg-white">
         <h2 className="text-3xl text-zinc-800 ml-[100px]">
           Chọn phương thức thanh toán:

@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 export const HomeCollection = () => {
   const [dataTourTrongNuoc, setDataTourTrongNuoc] = useState([]);
   const [dataTourNuocNgoai, setDataTourNuocNgoai] = useState([]);
-  const dataCart = useSelector((state) => state.cartReducer.cart);
   useEffect(() => {
     const fetchDataTrongNuoc = async () => {
       const result = await getTour(1, 6);

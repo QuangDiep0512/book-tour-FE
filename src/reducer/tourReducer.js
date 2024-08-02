@@ -2,7 +2,6 @@ export const tourReducer = (
   state = { tour: [], categoryById: [], searchTour: [] },
   action
 ) => {
-  console.log(state);
   let newData = [...state.tour];
   switch (action.type) {
     case "GET_TOUR":

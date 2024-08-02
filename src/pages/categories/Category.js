@@ -17,7 +17,6 @@ export const Category = () => {
   const data = useSelector((state) => state.tourReducer.tour);
   const categoryById = useSelector((state) => state.tourReducer.categoryById);
   const searchTrip = useSelector((state) => state.tourReducer.searchTour);
-  console.log(searchTrip);
 
   const getEndLocationById = (id) => {
     const result = menuLocation.filter((item) => item.catagoryId === id);

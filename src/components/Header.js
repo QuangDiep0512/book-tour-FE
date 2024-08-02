@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../App.css";
 import logo from "../imgs/logo_travel.png";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,11 +13,11 @@ import Tippy from "@tippyjs/react/headless";
 import "tippy.js/dist/tippy.css";
 import { useSelector } from "react-redux";
 import { getAllTour, getCategory } from "../service/TourService";
-
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [user, setUser] = useState();
   const data = useSelector((state) => state.cartReducer.cart);
+
   const [categoryName, setCategoryName] = useState([]);
 
   const total = data.reduce((sum, item) => {
@@ -66,9 +67,19 @@ export const Header = () => {
         >
           {categoryName.map((item) => {
             return (
-              <li className="py-3 hover:text-lightYellow" key={item.id}>
-                <NavLink to={`/category/${item.id}`}>{item.name}</NavLink>
-              </li>
+              <>
+                <li className="py-3 group" key={item.id}>
+                  <div className="hover:text-lightYellow">
+                    <NavLink
+                      to={`/category/${item.id}`}
+                      exact="true"
+                      activeclassname="active"
+                    >
+                      {item.name}
+                    </NavLink>
+                  </div>
+                </li>
+              </>
             );
           })}
         </ul>

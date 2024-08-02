@@ -28,28 +28,6 @@ export const Booked = () => {
     return `${day}/${month}/${year}`;
   }
 
-  // useEffect(() => {
-  //   const handleBackButton = (event) => {
-  //     console.log("event", event);
-  //     // Kiểm tra nếu người dùng bấm nút back trên trình duyệt
-  //     if (event.type === "popstate") {
-  //       // Kiểm tra nếu đường dẫn là trang "Booked"
-  //       if (window.location.pathname === "/booked") {
-  //         // Chuyển hướng về trang "Home"
-  //         navigate("/");
-  //       }
-  //     }
-  //   };
-
-  //   // Thêm sự kiện lắng nghe khi người dùng thay đổi đường dẫn (URL)
-  //   window.addEventListener("popstate", handleBackButton);
-
-  //   return () => {
-  //     // Loại bỏ sự kiện lắng nghe khi component unmount
-  //     window.removeEventListener("popstate", handleBackButton);
-  //   };
-  // }, []);
-
   return (
     <div>
       <div className="shadow-lg max-w-[1100px] mx-auto shadow-slate-400 mt-3 px-6 max-h-[350px] overflow-y-scroll">

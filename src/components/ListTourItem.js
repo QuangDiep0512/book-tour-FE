@@ -22,12 +22,14 @@ export const ListTourItem = (props) => {
   return (
     <div className="shadow-md shadow-slate-400 rounded-md overflow-hidden">
       <Link to={`/tourList/${item.id}`}>
-        <img
-          src={item.image}
-          alt=""
-          className="object-cover aspect-[4/2] w-full"
-          onClick={handleTourViewed}
-        />
+        <div className="overflow-hidden  ">
+          <img
+            src={item.image}
+            alt=""
+            className="object-cover aspect-[4/2] w-full hover:scale-110 transition ease-linear duration-300"
+            onClick={handleTourViewed}
+          />
+        </div>
       </Link>
       <div className="p-4">
         <h3

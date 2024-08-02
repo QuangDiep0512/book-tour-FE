@@ -42,7 +42,7 @@ export const ButtonAddToCart = (props) => {
   return (
     <button
       className={`${
-        addCart ? "bg-red-500" : "bg-orange"
+        addCart ? "bg-red-500 hover:bg-orange" : "bg-orange hover:bg-red-500"
       } py-2 min-w-[100px] px-2 text-white rounded-lg`}
       onClick={() => {
         addCart ? handleRemoveToCart(item) : handleAddToCart(item);

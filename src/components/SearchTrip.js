@@ -52,7 +52,7 @@ export const SearchTrip = (props) => {
   }, [data]);
 
   return (
-    <div className="grid lg:grid-cols-4 text-sm md:text-base w-[500px] md:w-auto grid-cols-2 gap-[30px] justify-center bg-white lg:p-8 p-4 rounded-lg mx-4">
+    <div className="grid lg:grid-cols-4 text-sm md:text-base w-[500px] lg:min-w-[990px] grid-cols-2 gap-[30px] justify-center bg-white lg:p-8 p-4 rounded-lg mx-4">
       {/* ==Điểm khởi hành== */}
       <div className="select_address px-4">
         <FontAwesomeIcon

@@ -48,4 +48,29 @@
   .input-config {
     @apply p-2 border-2 border-solid rounded-md border-[#ccc] outline-none focus:shadow-custom;
   }
+  .step {
+    @apply w-[50px] text-lg text-purple font-extrabold h-[50px] bg-white border-[1px] border-solid border-[#ACACA6] rounded-full text-center flex justify-center items-center;
+  }
+  .step.selected {
+    @apply border-[2px] border-solid border-purple;
+  }
+  .step.completed {
+    @apply border-[2px] border-solid border-purple bg-purple;
+  }
+
+  .heading-footer {
+    @apply md:text-xl text-base text-white;
+  }
+  .text-footer {
+    @apply md:text-base text-sm text-[#cdc5c5] leading-7;
+  }
+  .icon-footer {
+    @apply md:w-[30px] md:h-[30px] w-5 h-5;
+  }
+  li {
+    @apply list-none;
+  }
+  .group:hover ~ .group-hover {
+    @apply block;
+  }
 }

@@ -3,9 +3,11 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { SelectedBooking } from "../../components/SelectedBooking";
+import { Process } from "../../components/Process";
 
 export const Booking = () => {
   const navigate = useNavigate();
+  const step = 3;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -115,8 +117,8 @@ export const Booking = () => {
 
   return (
     <div className="bg-grey">
-      <div>Cac buoc thanh toan</div>
-      <div className="my-7 bg-white">
+      <Process step={step} />
+      <div className="mb-7 bg-white">
         <div className="grid grid-cols-3 gap-5 max-w-[1149px] mx-auto text-zinc-900 py-7">
           <div className="col-span-2">
             {[

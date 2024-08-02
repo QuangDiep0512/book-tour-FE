@@ -4,27 +4,15 @@ import { Link } from "react-router-dom";
 import { addBooked } from "../actions/Booked";
 import { useNavigate } from "react-router-dom";
 
-export const CheckoutSuccess = () => {
+export const CheckoutSuccess = ({ setStep }) => {
   const tourCheckout = useSelector((state) => state.checkoutReducer);
   const dispath = useDispatch();
   const navigate = useNavigate();
 
   useEffect(() => {
     dispath(addBooked(tourCheckout));
+    setStep(6);
   }, []);
-
-  // useEffect(() => {
-  //   const handleBackButton = (event) => {
-  //     if (event.type === "popstate") {
-  //       navigate("/cart");
-  //     }
-  //   };
-  //   window.addEventListener("popstate", handleBackButton);
-
-  //   return () => {
-  //     window.removeEventListener("popstate", handleBackButton);
-  //   };
-  // }, [navigate]);
 
   return (
     <div className="min-w-[600px] items-center bg-red flex flex-col">
