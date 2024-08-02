@@ -52,7 +52,7 @@ export const Login = () => {
   return (
     <div className="relative  flex justify-center items-center h-[100vh] bg-bgLogin bg-cover bg-no-repeat bg-center">
       <div className="absolute inset-0 bg-slate-200 opacity-50"></div>
-      <div className=" bg-white px-10 py-5 z-40 rounded-lg min-w-[600px]">
+      <div className=" bg-white px-10 py-5 z-40 rounded-lg md:min-w-[600px]">
         <h2 className="text-3xl text-purple font-bold text-center mb-10">
           Đăng nhập
         </h2>
@@ -79,12 +79,16 @@ export const Login = () => {
           >
             Đăng nhập
           </button>
-          <div className="flex justify-between text-purple">
+          <div className="flex justify-between text-purple ">
             <Link>
-              <span className="underline">Quên mật khẩu</span>
+              <span className="underline md:text-base text-sm mr-2">
+                Quên mật khẩu
+              </span>
             </Link>
             <Link to="/register">
-              <span className="underline">Tạo tài khoản mới</span>
+              <span className="underline  md:text-base text-sm ml-2">
+                Tạo tài khoản mới
+              </span>
             </Link>
           </div>
         </div>

@@ -130,10 +130,13 @@ export const Register = () => {
         <h2 className="text-3xl text-purple font-bold text-center mb-10">
           Tạo tài khoản
         </h2>
-        <div className="flex place-items-end flex-wrap gap-x-5 gap-y-7">
+        <div className="sm:flex w-full place-items-end flex-wrap gap-x-5 gap-y-7">
           {inputFields.map((item, index) => {
             return (
-              <div className="w-[48%] relative" key={index}>
+              <div
+                className="md:w-[48%] flex flex-col md:flex-row w-full md:my-0 relative"
+                key={index}
+              >
                 {err[item.name] && (
                   <span className="text-red-600 text-sm absolute bottom-[100%]">
                     *{err[item.name]}
@@ -144,7 +147,7 @@ export const Register = () => {
                   type={item.type}
                   name={item.name}
                   placeholder={item.placeholder}
-                  className="input-config w-full"
+                  className="input-config w-full my-1"
                   onChange={handleChangeInput}
                 />
               </div>
