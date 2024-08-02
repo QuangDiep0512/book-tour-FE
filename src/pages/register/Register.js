@@ -120,7 +120,6 @@ export const Register = () => {
         text: "Đăng kí tài khoản mới thành công!!",
       });
       navigate("/login");
-      return;
     }
   };
 
