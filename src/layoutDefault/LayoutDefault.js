@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 export const LayoutDefault = () => {
   return (
-    <div>
+    <div className="h-[100vh]">
       <Header />
       <Outlet />
       <Fotter />

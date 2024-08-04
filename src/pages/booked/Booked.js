@@ -30,7 +30,7 @@ export const Booked = () => {
 
   return (
     <div>
-      <div className="shadow-lg max-w-[1100px] mx-auto shadow-slate-400 mt-3 px-6 max-h-[350px] overflow-y-scroll">
+      <div className="shadow-lg max-w-[1100px] mx-auto shadow-slate-400 mt-3 px-6 min-h-[400px] overflow-y-scroll">
         {booked && booked.length > 0 ? (
           booked.map((item, index) => {
             return (

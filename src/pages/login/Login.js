@@ -86,7 +86,7 @@ export const Login = () => {
               </span>
             </Link>
             <Link to="/register">
-              <span className="underline  md:text-base text-sm ml-2">
+              <span className="underline md:text-base text-sm ml-2">
                 Tạo tài khoản mới
               </span>
             </Link>

@@ -14,6 +14,10 @@ export const CheckoutSuccess = ({ setStep }) => {
     setStep(6);
   }, []);
 
+  window.onpopstate = () => {
+    navigate("/cart");
+  };
+
   return (
     <div className="min-w-[600px] items-center bg-red flex flex-col">
       <div className="mb-2 p-4 bg-grey">

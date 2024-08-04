@@ -16,6 +16,7 @@ export const ListTour = (props) => {
           {data.map((item) => {
             return <ListTourItem item={item} key={item.id} />;
           })}
+          {/* <button onClick={() => setShowAllTours(false)}>Xem thêm </button> */}
         </div>
       </div>
     </>

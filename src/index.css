@@ -49,13 +49,13 @@
     @apply p-2 border-2 border-solid rounded-md border-[#ccc] outline-none focus:shadow-custom;
   }
   .step {
-    @apply w-[50px] text-lg text-purple font-extrabold h-[50px] bg-white border-[1px] border-solid border-[#ACACA6] rounded-full text-center flex justify-center items-center;
+    @apply w-[50px] text-lg text-purple font-extrabold h-[50px] bg-white border-[3px] border-solid border-[#ACACA6] rounded-full text-center flex justify-center items-center;
   }
   .step.selected {
-    @apply border-[2px] border-solid border-purple;
+    @apply border-[3px] border-solid border-purple;
   }
   .step.completed {
-    @apply border-[2px] border-solid border-purple bg-purple;
+    @apply bg-purple text-white;
   }
 
   .heading-footer {
@@ -72,5 +72,19 @@
   }
   .group:hover ~ .group-hover {
     @apply block;
+  }
+  .active {
+    color: #ffc709;
+  }
+
+  .progress-wrapper::after {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transfrom: translateY(-50%);
+    content: "";
+    height: 5px;
+    background-color: #ccc;
+    z-index: 1;
   }
 }

@@ -6,10 +6,18 @@ import { useSelector } from "react-redux";
 export const HomeCollection = () => {
   const [dataTourTrongNuoc, setDataTourTrongNuoc] = useState([]);
   const [dataTourNuocNgoai, setDataTourNuocNgoai] = useState([]);
+  const [showAllTours, setShowAllTours] = useState(true);
   useEffect(() => {
     const fetchDataTrongNuoc = async () => {
-      const result = await getTour(1, 6);
-      setDataTourTrongNuoc(result.data);
+      if (showAllTours === true) {
+        const result = await getTour(1, 6);
+        setDataTourTrongNuoc(result.data);
+      }
+      // else {
+      //   const result = await getTour(6, 12); // Giả sử 100 là đủ để lấy tất cả tour
+      //   setDataTourTrongNuoc(result.data);
+      //   setShowAllTours(false);
+      // }
     };
     fetchDataTrongNuoc();
   }, []);
@@ -27,6 +35,7 @@ export const HomeCollection = () => {
         title={"Điểm đến yêu thích trong nước"}
         des={"Lên rừng xuống biển. Trọn vẹn Việt Nam"}
         data={dataTourTrongNuoc}
+        // setShowAllTours={setShowAllTours}
       />
       <ListTour
         title={"Điểm đến yêu thích nước ngoài"}

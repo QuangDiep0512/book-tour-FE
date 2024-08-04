@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export const Process = ({ step }) => {
+  const [width, setWidth] = useState("0%");
   const items = [
     {
       number: 1,
@@ -25,40 +26,43 @@ export const Process = ({ step }) => {
       title: "Thanh toán",
     },
   ];
-  // 1, 2, 3, 4, 5];
   let isIcon = false;
+
+  useEffect(() => {
+    setWidth(() => {
+      return ((step - 1) / (items.length - 1)) * 100 + "%";
+    });
+  }, []);
+
   const getStepClass = (currentStep, targetStep) => {
-    if (currentStep < targetStep) {
-      return "";
-    } else if (currentStep === targetStep) {
-      isIcon = false;
+    if (targetStep < currentStep) {
+      return "completed selected";
+    } else if (targetStep === currentStep) {
       return "selected";
     } else {
-      isIcon = true;
-      return "completed selected";
+      return "";
     }
   };
   return (
-    <div className=" mx-[185px] py-10">
-      <div className="w-full relative">
-        <div className="progress top-[50%] translate-y-[-50%] absolute w-full border-solid border-[#ACACA6] z-0 transition-all">
-          <div className="percent absolute w-full border-[1px] border-solid border-[#4B81BD] z-10"></div>
-        </div>
-        <div className="steps relative flex justify-between w-full">
+    <div className="mx-[185px] py-10">
+      <div className="progress-wrapper w-full relative">
+        <div
+          className="progress absolute w-0 h-[6px] content-none bg-[#4B81BD] top-[50%] z-10"
+          style={{ width }}
+        ></div>
+        <div className="steps relative flex justify-between w-full z-20">
           {items.map((item) => {
             return (
-              <>
-                <div className={`${getStepClass(step, item.number)} step`}>
-                  {isIcon === true ? (
-                    <FontAwesomeIcon icon={faCheck} className="text-white" />
-                  ) : (
-                    <p>{item.number}</p>
-                  )}
-                  <div className="absolute top-full min-w-[100px]">
-                    <p className="font-medium">{item.title}</p>
-                  </div>
+              <div className={`${getStepClass(step, item.number)} step`}>
+                {isIcon === true ? (
+                  <FontAwesomeIcon icon={faCheck} className="text-white" />
+                ) : (
+                  <p>{item.number}</p>
+                )}
+                <div className="absolute top-full min-w-[100px]">
+                  <p className="font-medium text-purple">{item.title}</p>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
